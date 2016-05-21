@@ -1,6 +1,6 @@
 # PlatformIO Xcode Templates
 
-With this template you can develop PlatformIO and Arduino Projects directly in Xcode. It uses the PlatformIO CLI and doesn't use Makefiles, so you have cleaner projects.
+With this template you can develop [PlatformIO](http://platformio.org) and [Arduino](http://www.arduino.cc) Projects directly in Xcode. It uses the PlatformIO CLI and doesn't use Makefiles, so you have cleaner projects.
 
 This Template uses CoolTerm as its serial monitor. It is free to use and you can download it here:
 http://freeware.the-meiers.org
@@ -9,6 +9,7 @@ http://freeware.the-meiers.org
 Copy the files to
 ```~/Library/Developer/Xcode/Templates/Project Templates/PlatformIO```
 
+Download and install [PlatformIO CLI](http://platformio.org). See [here](http://docs.platformio.org/en/latest/installation.html) for more information.
 Download and drag the [CoolTerm](http://freeware.the-meiers.org) app into your Applications folder
 
 ## Usage:
