@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.c-header</string>
+		<string>public.c-plus-plus.source</string>
+		<string>public.c-source</string>
+	</array>
+	<key>Ancestors</key>
+	<array>
+		<string>com.anoobis.platformioXcode100.xcode4.template.sketch</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>ReadMe.md</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Supporting Files</string>
+			</array>
+			<key>Path</key>
+			<string>README.md</string>
+		</dict>
+		<key>lib/ReadMe.txt</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Private Libraries</string>
+			</array>
+			<key>Path</key>
+			<string>lib/ReadMe.txt</string>
+		</dict>
+		<key>platformio.ini</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Supporting Files</string>
+			</array>
+			<key>Path</key>
+			<string>platformio.ini</string>
+		</dict>
+		<key>utils/addBoard.py</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Supporting Files</string>
+			</array>
+			<key>Path</key>
+			<string>utils/addBoard.py</string>
+		</dict>
+		<key>utils/listPorts.py</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Supporting Files</string>
+			</array>
+			<key>Path</key>
+			<string>utils/listPorts.py</string>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>This template creates a project for PlatformIO.</string>
+	<key>Identifier</key>
+	<string>com.anoobis.platformioXcode100.xcode4.template.project</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>platformio.ini</string>
+		<string>lib/ReadMe.txt</string>
+		<string>utils/addBoard.py</string>
+		<string>utils/listPorts.py</string>
+		<string>ReadMe.md</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<string>Arduino Uno</string>
+			<key>Description</key>
+			<string>Which board to compile against and upload to</string>
+			<key>Identifier</key>
+			<string>targetBoardConfigName</string>
+			<key>Name</key>
+			<string>Board:</string>
+			<key>SortOrder</key>
+			<integer>5</integer>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Units</key>
+			<dict>
+				<key>Arduino Due (Programming Port)</key>
+				<dict>
+					<key>Macros</key>
+					<dict>
+						<key>PIO_BOARD</key>
+						<string>due</string>
+						<key>PIO_CORE</key>
+						<string>arduino</string>
+						<key>PIO_EXTRA_FLAGS</key>
+						<string>-D__SAM3X8E__ -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM</string>
+						<key>PIO_FRAMEWORK</key>
+						<string>arduino</string>
+						<key>PIO_F_CPU</key>
+						<string>84000000L</string>
+						<key>PIO_MAXIMUM_RAM_SIZE</key>
+						<string>32768</string>
+						<key>PIO_MCU</key>
+						<string>sam3x8e</string>
+						<key>PIO_PLATFORM</key>
+						<string>atmelsam</string>
+						<key>PIO_VARIANT</key>
+						<string>arduino_due_x</string>
+					</dict>
+				</dict>
+				<key>Arduino Due (USB Native Port)</key>
+				<dict>
+					<key>Macros</key>
+					<dict>
+						<key>PIO_BOARD</key>
+						<string>dueUSB</string>
+						<key>PIO_CORE</key>
+						<string>arduino</string>
+						<key>PIO_EXTRA_FLAGS</key>
+						<string>-D__SAM3X8E__ -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM</string>
+						<key>PIO_FRAMEWORK</key>
+						<string>arduino</string>
+						<key>PIO_F_CPU</key>
+						<string>84000000L</string>
+						<key>PIO_MAXIMUM_RAM_SIZE</key>
+						<string>32768</string>
+						<key>PIO_MCU</key>
+						<string>sam3x8e</string>
+						<key>PIO_PLATFORM</key>
+						<string>atmelsam</string>
+						<key>PIO_VARIANT</key>
+						<string>arduino_due_x</string>
+					</dict>
+				</dict>
+				<key>Arduino Leonardo</key>
+				<dict>
+					<key>Macros</key>
+					<dict>
+						<key>PIO_BOARD</key>
+						<string>leonardo</string>
+						<key>PIO_CORE</key>
+						<string>arduino</string>
+						<key>PIO_EXEC</key>
+						<string>toolchain-atmelavr/bin/avr-g++</string>
+						<key>PIO_EXTRA_FLAGS</key>
+						<string>-DARDUINO_ARCH_AVR -DARDUINO_AVR_LEONARDO</string>
+						<key>PIO_FRAMEWORK</key>
+						<string>arduino</string>
+						<key>PIO_FRAMEWORK_PATH</key>
+						<string>framework-arduinoavr</string>
+						<key>PIO_F_CPU</key>
+						<string>16000000L</string>
+						<key>PIO_MAXIMUM_RAM_SIZE</key>
+						<string>2560</string>
+						<key>PIO_MCU</key>
+						<string>atmega32u4</string>
+						<key>PIO_PLATFORM</key>
+						<string>arduino</string>
+						<key>PIO_VARIANT</key>
+						<string>leonardo</string>
+					</dict>
+				</dict>
+				<key>Arduino Mega or Mega 2560 ATmega2560 (Mega 2560)</key>
+				<dict>
+					<key>Macros</key>
+					<dict>
+						<key>PIO_BOARD</key>
+						<string>megaatmega2560</string>
+						<key>PIO_CORE</key>
+						<string>arduino</string>
+						<key>PIO_EXTRA_FLAGS</key>
+						<string>-DARDUINO_ARCH_AVR -DARDUINO_AVR_MEGA2560</string>
+						<key>PIO_FRAMEWORK</key>
+						<string>arduino</string>
+						<key>PIO_F_CPU</key>
+						<string>16000000L</string>
+						<key>PIO_MAXIMUM_RAM_SIZE</key>
+						<string>8192</string>
+						<key>PIO_MCU</key>
+						<string>atmega2560</string>
+						<key>PIO_PLATFORM</key>
+						<string>atmelavr</string>
+						<key>PIO_VARIANT</key>
+						<string>mega</string>
+					</dict>
+				</dict>
+				<key>Arduino Nano ATmega328</key>
+				<dict>
+					<key>Macros</key>
+					<dict>
+						<key>PIO_BOARD</key>
+						<string>nanoatmega328</string>
+						<key>PIO_CORE</key>
+						<string>arduino</string>
+						<key>PIO_EXTRA_FLAGS</key>
+						<string>-DARDUINO_ARCH_AVR -DARDUINO_AVR_NANO</string>
+						<key>PIO_FRAMEWORK</key>
+						<string>arduino</string>
+						<key>PIO_F_CPU</key>
+						<string>16000000L</string>
+						<key>PIO_MAXIMUM_RAM_SIZE</key>
+						<string>2048</string>
+						<key>PIO_MCU</key>
+						<string>atmega328p</string>
+						<key>PIO_PLATFORM</key>
+						<string>atmelavr</string>
+						<key>PIO_VARIANT</key>
+						<string>eightanaloginputs</string>
+					</dict>
+				</dict>
+				<key>Arduino Uno</key>
+				<dict>
+					<key>Macros</key>
+					<dict>
+						<key>PIO_BOARD</key>
+						<string>uno</string>
+						<key>PIO_CORE</key>
+						<string>arduino</string>
+						<key>PIO_EXTRA_FLAGS</key>
+						<string>-DARDUINO_ARCH_AVR -DARDUINO_AVR_UNO</string>
+						<key>PIO_FRAMEWORK</key>
+						<string>arduino</string>
+						<key>PIO_F_CPU</key>
+						<string>16000000L</string>
+						<key>PIO_MAXIMUM_RAM_SIZE</key>
+						<string>2048</string>
+						<key>PIO_MCU</key>
+						<string>atmega328p</string>
+						<key>PIO_PLATFORM</key>
+						<string>atmelavr</string>
+						<key>PIO_VARIANT</key>
+						<string>standard</string>
+					</dict>
+				</dict>
+				<key>Arduino Yun</key>
+				<dict>
+					<key>Macros</key>
+					<dict>
+						<key>PIO_BOARD</key>
+						<string>yun</string>
+						<key>PIO_CORE</key>
+						<string>arduino</string>
+						<key>PIO_EXTRA_FLAGS</key>
+						<string>-DARDUINO_ARCH_AVR -DARDUINO_AVR_YUN</string>
+						<key>PIO_FRAMEWORK</key>
+						<string>arduino</string>
+						<key>PIO_F_CPU</key>
+						<string>16000000L</string>
+						<key>PIO_MAXIMUM_RAM_SIZE</key>
+						<string>2560</string>
+						<key>PIO_MCU</key>
+						<string>atmega32u4</string>
+						<key>PIO_PLATFORM</key>
+						<string>atmelavr</string>
+						<key>PIO_VARIANT</key>
+						<string>yun</string>
+					</dict>
+				</dict>
+				<key>Espressif ESP8266 ESP-12E</key>
+				<dict>
+					<key>Macros</key>
+					<dict>
+						<key>PIO_BOARD</key>
+						<string>esp12e</string>
+						<key>PIO_CORE</key>
+						<string>esp8266</string>
+						<key>PIO_EXTRA_FLAGS</key>
+						<string>-DESP8266 -DARDUINO_ARCH_ESP8266 -DARDUINO_ESP8266_ESP12</string>
+						<key>PIO_FRAMEWORK</key>
+						<string>arduino</string>
+						<key>PIO_F_CPU</key>
+						<string>80000000L</string>
+						<key>PIO_MAXIMUM_RAM_SIZE</key>
+						<string>81920</string>
+						<key>PIO_MCU</key>
+						<string>esp8266</string>
+						<key>PIO_PLATFORM</key>
+						<string>espressif</string>
+						<key>PIO_VARIANT</key>
+						<string>nodemcu</string>
+					</dict>
+				</dict>
+				<key>NodeMCU 1.0 (ESP-12E Module)</key>
+				<dict>
+					<key>Macros</key>
+					<dict>
+						<key>PIO_BOARD</key>
+						<string>nodemcuv2</string>
+						<key>PIO_CORE</key>
+						<string>esp8266</string>
+						<key>PIO_EXTRA_FLAGS</key>
+						<string>-DESP8266 -DARDUINO_ARCH_ESP8266 -DARDUINO_ESP8266_NODEMCU</string>
+						<key>PIO_FRAMEWORK</key>
+						<string>arduino</string>
+						<key>PIO_F_CPU</key>
+						<string>80000000L</string>
+						<key>PIO_MAXIMUM_RAM_SIZE</key>
+						<string>81920</string>
+						<key>PIO_MCU</key>
+						<string>esp8266</string>
+						<key>PIO_PLATFORM</key>
+						<string>espressif</string>
+						<key>PIO_VARIANT</key>
+						<string>nodemcu</string>
+					</dict>
+				</dict>
+				<key>Raspberry Pi 2 Model B</key>
+				<dict>
+					<key>Macros</key>
+					<dict>
+						<key>PIO_BOARD</key>
+						<string>raspberrypi_2b</string>
+						<key>PIO_EXTRA_FLAGS</key>
+						<string>-DRASPBERRYPI -DRASPBERRYPI2</string>
+						<key>PIO_FRAMEWORK</key>
+						<string>wiringpi</string>
+						<key>PIO_F_CPU</key>
+						<string>900000000L</string>
+						<key>PIO_MAXIMUM_RAM_SIZE</key>
+						<string>1073741824</string>
+						<key>PIO_MCU</key>
+						<string>bcm2836</string>
+						<key>PIO_PLATFORM</key>
+						<string>linux_arm</string>
+					</dict>
+				</dict>
+				<key>Teensy 2.0</key>
+				<dict>
+					<key>Macros</key>
+					<dict>
+						<key>PIO_BOARD</key>
+						<string>teensy20</string>
+						<key>PIO_CORE</key>
+						<string>teensy</string>
+						<key>PIO_FRAMEWORK</key>
+						<string>arduino</string>
+						<key>PIO_F_CPU</key>
+						<string>16000000L</string>
+						<key>PIO_MAXIMUM_RAM_SIZE</key>
+						<string>2560</string>
+						<key>PIO_MCU</key>
+						<string>atmega32u4</string>
+						<key>PIO_PLATFORM</key>
+						<string>teensy</string>
+					</dict>
+				</dict>
+				<key>Teensy 3.1 / 3.2</key>
+				<dict>
+					<key>Macros</key>
+					<dict>
+						<key>PIO_BOARD</key>
+						<string>teensy31</string>
+						<key>PIO_CORE</key>
+						<string>teensy3</string>
+						<key>PIO_EXTRA_FLAGS</key>
+						<string>-D__MK20DX256__</string>
+						<key>PIO_FRAMEWORK</key>
+						<string>arduino</string>
+						<key>PIO_F_CPU</key>
+						<string>72000000L</string>
+						<key>PIO_MAXIMUM_RAM_SIZE</key>
+						<string>65536</string>
+						<key>PIO_MCU</key>
+						<string>mk20dx256</string>
+						<key>PIO_PLATFORM</key>
+						<string>teensy</string>
+					</dict>
+				</dict>
+				<key>Teensy++ 2.0</key>
+				<dict>
+					<key>Macros</key>
+					<dict>
+						<key>PIO_BOARD</key>
+						<string>teensy20pp</string>
+						<key>PIO_CORE</key>
+						<string>teensy</string>
+						<key>PIO_FRAMEWORK</key>
+						<string>arduino</string>
+						<key>PIO_F_CPU</key>
+						<string>16000000L</string>
+						<key>PIO_MAXIMUM_RAM_SIZE</key>
+						<string>8192</string>
+						<key>PIO_MCU</key>
+						<string>at90usb1286</string>
+						<key>PIO_PLATFORM</key>
+						<string>teensy</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>/dev/cu.SLAB_USBtoUART</string>
+			<key>Description</key>
+			<string>Set the USB port for the board</string>
+			<key>Identifier</key>
+			<string>port</string>
+			<key>Name</key>
+			<string>Port:</string>
+			<key>SortOrder</key>
+			<integer>6</integer>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Units</key>
+			<dict>
+				<key>/dev/cu.usbmodem1411</key>
+				<dict>
+					<key>Macros</key>
+					<dict>
+						<key>PIO_PORT</key>
+						<string>usbmodem1411</string>
+					</dict>
+				</dict>
+				<key>/dev/cu.usbmodem1421 - 2</key>
+				<dict>
+					<key>Macros</key>
+					<dict>
+						<key>PIO_PORT</key>
+						<string>usbmodem1421</string>
+					</dict>
+				</dict>
+				<key>/dev/cu.SLAB_USBtoUART - 2</key>
+				<dict>
+					<key>Macros</key>
+					<dict>
+						<key>PIO_PORT</key>
+						<string>SLAB_USBtoUART</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>115200</string>
+			<key>Description</key>
+			<string>Set the baudrate for serial communication</string>
+			<key>Identifier</key>
+			<string>baudrate</string>
+			<key>Name</key>
+			<string>Baudrate:</string>
+			<key>SortOrder</key>
+			<integer>7</integer>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Values</key>
+			<array>
+				<string>230400</string>
+				<string>115200</string>
+				<string>57600</string>
+				<string>28800</string>
+				<string>14400</string>
+				<string>9600</string>
+			</array>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.macosx</string>
+	</array>
+	<key>Project</key>
+	<dict>
+		<key>BasedOn</key>
+		<dict>
+			<key>Debug</key>
+			<string></string>
+			<key>Release</key>
+			<string></string>
+		</dict>
+		<key>Configurations</key>
+		<dict>
+			<key>Debug</key>
+			<dict/>
+			<key>Release</key>
+			<dict/>
+		</dict>
+		<key>SharedSettings</key>
+		<dict>
+			<key>HEADER_SEARCH_PATHS</key>
+			<string>$(inherited)</string>
+			<key>PATH</key>
+			<string>$(PATH):$(PROJECT_DIR)</string>
+		</dict>
+	</dict>
+	<key>SortOrder</key>
+	<integer>9</integer>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>BuildToolArgsString</key>
+			<string>run -d &quot;$PROJECT&quot;</string>
+			<key>BuildToolPath</key>
+			<string>platformio</string>
+			<key>Name</key>
+			<string>Build</string>
+			<key>TargetType</key>
+			<string>Legacy</string>
+		</dict>
+		<dict>
+			<key>BuildToolArgsString</key>
+			<string>run -t upload -d &quot;$PROJECT&quot;</string>
+			<key>BuildToolPath</key>
+			<string>platformio</string>
+			<key>Name</key>
+			<string>Upload</string>
+			<key>TargetType</key>
+			<string>Legacy</string>
+		</dict>
+		<dict>
+			<key>BuildToolArgsString</key>
+			<string>run -t size -d &quot;$PROJECT&quot;</string>
+			<key>BuildToolPath</key>
+			<string>platformio</string>
+			<key>Name</key>
+			<string>List Size</string>
+			<key>TargetType</key>
+			<string>Legacy</string>
+		</dict>
+		<dict>
+			<key>BuildToolArgsString</key>
+			<string>boards</string>
+			<key>BuildToolPath</key>
+			<string>platformio</string>
+			<key>Name</key>
+			<string>List Boards</string>
+			<key>TargetType</key>
+			<string>Legacy</string>
+		</dict>
+		<dict>
+			<key>BuildToolArgsString</key>
+			<string>-e &apos;tell application &quot;CoolTerm&quot;
+	set wID to WindowID (0)
+	if wID &lt; 0 then
+		# display alert &quot;No open windows&quot;
+		# return
+	end if
+	set thePath to POSIX file &quot;&apos;&quot;$PROJECT_DIR&quot;&apos;/&apos;&quot;$PROJECT_NAME&quot;&apos;/platformio.ini&quot; as text
+	set wID to LoadSetting thePath
+	if wID ≥ 0 then
+		wID Connect
+		activate
+		# CloseWindow (wID)
+        return 0
+	else
+	    display alert &quot;Error opening coolterm. Check your settings in the platformio.ini file&quot;
+        return 1
+	end if
+end tell&apos;</string>
+			<key>BuildToolPath</key>
+			<string>osascript</string>
+			<key>Name</key>
+			<string>Serial Monitor</string>
+			<key>TargetType</key>
+			<string>Legacy</string>
+		</dict>
+		<dict>
+			<key>BuildToolArgsString</key>
+			<string>run -t clean -d &quot;$PROJECT&quot;</string>
+			<key>BuildToolPath</key>
+			<string>platformio</string>
+			<key>Name</key>
+			<string>Clean</string>
+			<key>TargetType</key>
+			<string>Legacy</string>
+		</dict>
+		<dict>
+			<key>BuildToolArgsString</key>
+			<string>&quot;$PROJECT/utils/addBoard.py&quot; &quot;$PROJECT&quot;</string>
+			<key>BuildToolPath</key>
+			<string>python</string>
+			<key>Name</key>
+			<string>Add Board</string>
+			<key>TargetType</key>
+			<string>Legacy</string>
+		</dict>
+		<dict>
+			<key>BuildToolArgsString</key>
+			<string>&quot;$PROJECT/utils/listPorts.py&quot; &quot;$PROJECT&quot;</string>
+			<key>BuildToolPath</key>
+			<string>python</string>
+			<key>Name</key>
+			<string>List Ports:</string>
+			<key>TargetType</key>
+			<string>Legacy</string>
+		</dict>
+		<dict>
+			<key>BuildToolArgsString</key>
+			<string>run -t uploadfs -d &quot;$PROJECT&quot;</string>
+			<key>BuildToolPath</key>
+			<string>platformio</string>
+			<key>Name</key>
+			<string>Upload SPIFFS</string>
+			<key>TargetType</key>
+			<string>Legacy</string>
+		</dict>
+	</array>
+</dict>
+</plist>
