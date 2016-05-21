@@ -7,7 +7,7 @@ http://freeware.the-meiers.org
 
 ## Installation:
 Copy the files to
-```~/Library/Developer/Xcode/Templates/Project Templates/PlatformIO```
+```~/Library/Developer/Xcode/Templates/Project Templates/```
 
 Download and install [PlatformIO CLI](http://platformio.org). See [here](http://docs.platformio.org/en/latest/installation.html) for more information.
 
