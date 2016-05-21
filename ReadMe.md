@@ -10,6 +10,7 @@ Copy the files to
 ```~/Library/Developer/Xcode/Templates/Project Templates/PlatformIO```
 
 Download and install [PlatformIO CLI](http://platformio.org). See [here](http://docs.platformio.org/en/latest/installation.html) for more information.
+
 Download and drag the [CoolTerm](http://freeware.the-meiers.org) app into your Applications folder
 
 ## Usage:
